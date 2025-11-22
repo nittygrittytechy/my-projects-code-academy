@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+h1{margin:40px}
+p{margin:10px 0px 20px 40px}
+.my-form{
+    padding: 12px;
+    margin: 0px 0px 0px 30px;
+    text-align: left;
+}
+.form-input{border:1px solid #d5d5d5;padding: 8px;}
+.btn-form{padding:8px;border:2px solid #d5d5d5;cursor: pointer;border-radius: 8px;}
+.btn-form:hover{background-color: #bfec98;}
+.nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    text-decoration: none;
+    color:#f1f1f1;
+    background-color:#3073bb;
+    margin-bottom:40px
+}
+.nav-list{ margin-right:30px; list-style-type: none;}
+.nav-list a{
+    text-decoration: none;
+    color:#f1f1f1;
+}
+.nav-list li {
+    padding: 10px 20px;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* White transparent */
+    cursor: pointer;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.nav-list a:hover {
+    color: #fff; /* Brighter white on hover */
+}
