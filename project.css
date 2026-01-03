@@ -1,3 +1,4 @@
+/* Global styles my colors #353535, #082ef7, #f708a6 */
 * {
     margin: 0;
     padding: 0;
@@ -50,16 +51,16 @@ p{margin-bottom: 30px;}
 
 /* Individual card */
 .card-body {
-    flex: 0 0 calc(33.333% - 20px); /* Exactly 1/3 width minus gap */
-    max-width: calc(33.333% - 20px);
+    flex: 0 0 calc(25% - 20px); /* Exactly 1/3 width minus gap */
+    max-width: calc(25% - 20px);
     padding: 1rem 1rem;
-    background-color: #d9ebfc;
-    border: 1px solid rgba(0,0,0,.125);
+    background-color: #fafafa;
+    border: 1px solid #082EF7;
     border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
 }
-
+.card-body h2{color:#F708A6}
 /* Button wrapper */
 .btn-wrap {
     display: flex;
@@ -74,8 +75,8 @@ p{margin-bottom: 30px;}
     justify-content: center;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: #3073bb;
-    color: #fff;
+    background-color: #082EF7;
+    color: #ffffff;
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
@@ -85,12 +86,12 @@ p{margin-bottom: 30px;}
 }
 
 .btn-card:hover {
-    background-color: #fff;
-    color: #3073bb;
+    background-color: #F708A6;
+    color: #ffffff; 
 }
 
 .btn-card:focus {
-    outline: 2px solid #3073bb;
+    outline: 2px solid #F708A6;
     outline-offset: 2px;
 }
 
@@ -99,7 +100,7 @@ p{margin-bottom: 30px;}
     display: flex;
     justify-content: flex-end;
     padding: 15px;
-    background-color: #3073bb;
+    background-color: #082EF7;
     margin-bottom: 40px;
 }
 
@@ -109,22 +110,24 @@ p{margin-bottom: 30px;}
 }
 
 .nav-list li {
-    padding: 10px 20px;
     border-radius: 0.25rem;
     transition: background-color 0.3s ease;
 }
 
 .nav-list li:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* White transparent */
+    background-color:#F7D108;
 }
 
-.nav-list a {
+.nav-list li a {
+    display: block; /* Makes the link fill the entire li */
+    padding: 10px 20px; /* Moved padding from li to a */
     text-decoration: none;
     color: #f1f1f1;
+    transition: color 0.3s ease; /* Added transition for smooth color change */
 }
 
-.nav-list a:hover {
-    color: #fff; /* Brighter white on hover */
+.nav-list li:hover a {
+    color: #353535;
 }
 
 .nav-list a:focus {
@@ -136,12 +139,17 @@ p{margin-bottom: 30px;}
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #353535;
+    background-color: #082EF7;
     color: white;
     margin-top: 40px;
 }
 
 /* Mobile screens (phones) */
+@media (max-width:1200px) and (min-width:765px){
+    .card-body {
+        flex: 0 0 calc(33.33% - 20px); /* Exactly 1/3 width minus gap */
+        max-width: calc(33.33% - 20px);
+    }}
 @media (max-width: 768px) {
     .card-body {
         flex: 1 1 100%; /* Full width on mobile */
