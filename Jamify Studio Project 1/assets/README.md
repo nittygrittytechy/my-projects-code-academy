@@ -12,8 +12,8 @@ Users can build a personal search history that persists across sessions using lo
 
 ## Deployed Application
 
-[Live Demo](ADDURL)
-[Repo] (ADDURL)
+[Live Demo](https://github.com/nittygrittytechy/my-projects-code-academy/tree/main/Jamify%20Studio%20Project%201)
+[Repo] (https://nittygrittytechy.github.io/my-projects-code-academy/Jamify%20Studio%20Project%201)
 
 ## Features
 
@@ -79,14 +79,6 @@ Returns song data including track name, artist name, album artwork, release date
 Returns artist information including type, country, life span, and biographical annotations.
 
 **Endpoint:** `https://musicbrainz.org/ws/2/artist/?query={artistName}&fmt=json`
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone ADDLIVEURLHERE
-   ```
-2. Open `index.html` in your browser
 
 No build tools or dependencies required.
 
