@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jamify Studio - Find your favorite artists and songs">
+    <title>Jamify Studio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#home">
+                    <img src="assets/images/logo-for-project-1.png" alt="Jamify Studio Logo" class="logo-img me-2">
+                    <span class="brand-text">Jamify Studio</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#signin">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container-fluid container-fluid-img">
+            <div class="row">
+                <!-- Column 2 (60%) - Image (shown first on mobile) -->
+                <div class="col-lg-8 col-md-7 order-1 order-md-2 hero-image-col">
+                    <img src="assets/images/chatGPT image and Canva Add On 1-1-26.jpg" alt="Hero placeholder" class="img-fluid hero-image">
+                </div>
+                <!-- Column 1 (40%) - Text -->
+                <div class="col-lg-4 col-md-5 order-2 order-md-1 hero-text-col d-flex align-items-center">
+                    <div>
+                        <h1 class="hero-title">Jamify Your Way!</h1>
+                        <p class="hero-description">Search for your favorite artists and songs. Explore music history and find new tracks to love.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <main class="container-fluid main-content">
+        <div class="row">
+            <!-- Left Sidebar (Search Section) -->
+            <aside class="col-lg-3 col-md-4 sidebar">
+                <div class="search-box">
+                    <h2 class="search-title">Find My Artist or Song</h2>
+                    <label for="searchInput" class="visually-hidden">Search for artist or song</label>
+                    <input type="text" id="searchInput" class="form-control search-input" placeholder="search" aria-label="Search for artist or song">
+                    <button class="btn search-btn" aria-label="Search for artist or song">Search</button>
+                    <button class="btn clear-btn" aria-label="Clear search">Clear Search</button>
+                </div>
+
+                <div class="artist-history-box">
+                    <h2 class="history-title">Artist History</h2>
+                    <div class="history-content" role="region" aria-label="Artist search history">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Content Area (Search Results) -->
+            <section class="col-lg-9 col-md-8 results-section">
+                <h2 class="results-title">Search Results <span id="artistName"><!--{artist name}--></span></h2>
+                <div class="results-content" role="region" aria-label="Search results for artist">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-main">
+                <!-- Column 1: Logo and Tagline -->
+                <div class="col-lg-4 col-md-4 footer-col">
+                    <div class="footer-logo-section">
+                        <img src="assets/images/logo-for-project-1.png" alt="Jamify Studio Logo" class="footer-logo">
+                        <span class="footer-brand">Jamify Studio</span>
+                    </div>
+                    <p class="footer-tagline">Music fills the room so you can sing and dance.</p>
+                </div>
+
+                <!-- Column 2: Services -->
+                <div class="col-lg-4 col-md-4 footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-list">
+                        <li><a href="#ad-free">Ad Free Music</a></li>
+                        <li><a href="#powerup">Powerup Videos</a></li>
+                        <li><a href="#free-music">Free Music</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Information -->
+                <div class="col-lg-4 col-md-4 footer-col">
+                    <h3 class="footer-title">Information</h3>
+                    <ul class="footer-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#signin">Sign In</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Row -->
+            <div class="row">
+                <div class="col-12 footer-copyright">
+                    <p>&copy; 2025 by Jamify Studio</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
