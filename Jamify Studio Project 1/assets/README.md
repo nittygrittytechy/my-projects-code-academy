@@ -8,12 +8,12 @@ Users can build a personal search history that persists across sessions using lo
 
 ## Screenshot
 
-![Jamify Studio Screenshot](assets/images/jamify-search-results-project-1.PNG)
+[Jamify Studio Screenshot](assets/images/jamify-search-results-project-1.PNG)
 
 ## Deployed Application
 
-[Live Demo](https://github.com/nittygrittytechy/my-projects-code-academy/tree/main/Jamify%20Studio%20Project%201)
-[Repo] (https://nittygrittytechy.github.io/my-projects-code-academy/Jamify%20Studio%20Project%201)
+[Live Demo](https://nittygrittytechy.github.io/my-projects-code-academy/Jamify%20Studio%20Project%201)
+[Repo] (https://github.com/nittygrittytechy/my-projects-code-academy/tree/main/Jamify%20Studio%20Project%201)
 
 ## Features
 
@@ -79,8 +79,6 @@ Returns song data including track name, artist name, album artwork, release date
 Returns artist information including type, country, life span, and biographical annotations.
 
 **Endpoint:** `https://musicbrainz.org/ws/2/artist/?query={artistName}&fmt=json`
-
-No build tools or dependencies required.
 
 ## License
 
