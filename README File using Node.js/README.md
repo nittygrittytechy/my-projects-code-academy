@@ -28,7 +28,7 @@ To use this you will need to run the node index.js to answer the questions so yo
 
 ## License
 
-This project for Code Bootcamp is licensed under the MIT license.
+This project for Code Bootcamp is licensed under the MIT license. You can read more about the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Contributing
 
@@ -40,7 +40,7 @@ To test this out be sure to install inquirer 8.2.4.
 
 ## GitHub
 
-GitHub: [nittygrittytechy or visit here https://codepen.io/nittygrittytechy](https://github.com/nittygrittytechy or visit here https://codepen.io/nittygrittytechy)
+GitHub: [nittygrittytechy](https://github.com/nittygrittytechy)
 
 ## Email
 

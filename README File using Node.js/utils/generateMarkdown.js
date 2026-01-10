@@ -10,7 +10,17 @@
 // return an empty string so that nothing is displayed in the README for license.
 
 // Example stubs:
-//
+function renderLicenseURL(license) {
+  const licenseURLs = {
+    'MIT': 'https://opensource.org/licenses/MIT',
+    'Apache 2.0': 'https://opensource.org/licenses/Apache-2.0',
+    'GPL 3.0': 'https://www.gnu.org/licenses/gpl-3.0',
+    'BSD 3-Clause': 'https://opensource.org/licenses/BSD-3-Clause'
+  };
+  
+  return licenseURLs[license] || '';
+}
+
 function renderLicenseBadge(license) {
   if (license === 'None') {
     return '';
@@ -33,7 +43,7 @@ function renderLicenseSection(license) {
   
   return `## License
 
-This project for Code Bootcamp is licensed under the ${license} license.`;
+This project for Code Bootcamp is licensed under the ${license} license. You can read more about the [${license} license](${renderLicenseURL(license)}).`;
 }
 
 // TODO: Complete this function to generate the README markdown string
