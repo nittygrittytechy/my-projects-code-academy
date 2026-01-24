@@ -67,6 +67,8 @@ p{margin-bottom: 30px;}
     gap: 10px;
     margin-top: auto; /* Push buttons to bottom */
     justify-content: center;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
 }
 
 /* Button/link styling */
